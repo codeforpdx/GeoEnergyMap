@@ -17,6 +17,8 @@ After downloading the data from the EIA, I broke the energy generation down as c
 
 Then, in Excel, I ran some array formulas to just sum up the energy generation as clean or dirty. Then, I just saved that as a CSV file.
 ## Working with GeoPandas
+As mentioned above, one key aspect is setting up an environment in which you have GeoPandas installed. There are a number of prerequisite packages that are necessary to have installed. [This is a very simple guide to using Anaconda to have those set up from a clean environment. ](https://krutarthpatel929.medium.com/complete-and-easy-installation-of-geopandas-in-python-aaad3b5f9660).
+Next, open a Jupyter Notebook and import geoPandas, numpy, pandas, shapely, and matplotlib. From there, I downloaded the shapely file to obtain a map of the US and converted it to a JSON file format via a converter like [this one](https://products.aspose.app/gis/conversion/shapefile-to-json). Now, you can read in this map file along with the CSV file that was saved in the early process with the `pd.read.csv()` command. Join the two tables on state name (making sure you spelled out all state names in the csv file so that there are exact matches). That is accomplished with the lines:
 
 
 
