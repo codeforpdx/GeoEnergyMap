@@ -62,6 +62,6 @@ This basicaly sets up the data. The only challenge left was that we had Alaska a
 
 I added a branch to address the above needs. ⚠️I discovered after revisiting this code that there were some geopandas issues due to updates in some packages that didn't translate well.⚠️ In the lastest "Update" code, I handled the versioning for that, and noted that Alaska didn't color in appropriately. So this update also accounted for the need to extract the right color blend of red and lime. I haven't pushed this out yet, but you can see what was modified in the **EnergyDataUpdate** file.
 
-
+One could now look at exporting the various png files, combine them into a singular one, and also look at the ranks of the different states as a .csv file. That could then be populated into say a C# or .Net program where you could build out dynamic reports.
 
 
