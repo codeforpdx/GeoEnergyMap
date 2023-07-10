@@ -58,6 +58,10 @@ Next, open a Jupyter Notebook and import geoPandas, numpy, pandas, shapely, and 
 This basicaly sets up the data. The only challenge left was that we had Alaska and Hawaii's space from the continental states dwarfing what distinctions we could see from the continental states. So it was worth setting up a sub dataframe for those two states. Then, after setting up a new color map with "lime", and "red", create 3 maps for continental, Alaska, and Hawaii. You can then just copy and paste them together into a new .png file with any graphics editor like Paint. 
 ![Here is the final result](https://github.com/AxisMeetsWorld/GeoEnergyMap/blob/main/Sustainable%20energy%20mix%20by%20State.png)
 
+### Updating this File after 2 years; exploring the possibilities of exporting the rankings and maps to other applications (.csvs, and  .png files)
+
+I added a branch to address the above needs. ⚠️I discovered after revisiting this code that there were some geopandas issues due to updates in some packages that didn't translate well.⚠️ In the lastest "Update" code, I handled the versioning for that, and noted that Alaska didn't color in appropriately. So this update also accounted for the need to extract the right color blend of red and lime. I haven't pushed this out yet, but you can see what was modified in the **EnergyDataUpdate** file.
+
 
 
 
